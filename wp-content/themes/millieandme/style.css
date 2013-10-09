@@ -1,0 +1,62 @@
+@charset utf-8;
+
+/*
+	general styles
+ */
+
+.none { /* this class is used to hid the skip to content link at the beginning of the document for accessibility */
+	display: none;
+}
+.clear {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+/*
+	layout styles
+ */
+
+#if-logged-in .container {
+	background: #000;
+	margin-top: -24px;
+}
+
+		#widget-alert {
+			background: #C6D8CD;
+			border: 1px #5b816a solid;
+			padding: 24px;
+			margin-bottom: 24px;
+		}
+
+		
+		#sidebar {
+			width: 184px; 
+			float: right;
+			margin: 0;
+			padding: 15px;
+			overflow: hidden;
+		}
+
+		#sidebar .widget-area {
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-bottom: 1px #dedede solid;
+		}
+			#siebar ul,
+			#sidebar li {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+				#sidebar .children {
+					padding-left: 10px;
+				}
+					#sidebar .children .children {
+						padding-left: 10px;
+					}
+	
